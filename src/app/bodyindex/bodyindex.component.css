@@ -1,0 +1,297 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: Georgia, sans-serif;	
+	background-color: #fdfd96;
+	line-height: 1.6em;
+
+}
+
+main{
+	font-family: Georgia, sans-serif;	
+	background-color: #fdfd96;
+	line-height: 1.6em;
+
+}
+
+main img{
+	/*margin-top: 80px;
+	margin-left: 10px;*/
+	max-width: 100%;
+	
+}
+main section{
+	padding: 30px;
+}
+
+main section p{
+	margin-bottom: 1em;
+	text-align: justify;
+}
+
+main section h1{
+	margin-bottom: 30px;
+}
+
+/*-----BARRA LATERAL-----*/
+
+aside{
+	width: 27%;
+	position: absolute;
+	right: 0;
+	top: 0;
+	margin-top: 10px;
+	background-color: #fcbc0c;
+	padding: 40px;
+}
+
+aside ul li {
+	list-style: none;	
+	margin-bottom: 1em;
+	border-bottom: 1px solid;
+}
+
+aside ul li a{
+	text-decoration: none;
+	color: #7e4400;
+}
+
+aside ul li a:hover{
+	color: #56070c;
+	font-size: larger;
+}
+/*-----LINK ESTILOS NUEVAS AGREGADA-----*/
+
+
+a:link {
+color: white;
+}
+a:visited {
+color: #b87400;
+}
+
+
+/*----FORMULARIO----*/
+
+.flex_container{
+	display: flex;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	background-color: #C9A94F;
+	/*margin: 50px 30px;
+	padding-right: 20%;
+	padding-left: 20%;*/
+	margin-right: 20%;
+	margin-left: 20%;
+	margin-top: 20px;
+	margin-bottom: 10%;
+	
+
+
+}
+
+.form{
+	text-align: left;
+	padding: 30px;
+	flex: 2;
+	order: 5;
+}
+
+.form_input{
+	width: 100%;
+	padding: 7px;
+	margin: 9px 0;
+	border: none;
+	border-bottom: 3px solid #EBB662;
+	background-color: transparent;
+	color: white;
+
+}
+.form_label{
+	width: 100%;
+	padding: 7px;
+	margin: 9px 0;
+	border: none;
+	border-bottom: 3px solid #EBB662;
+	background-color: transparent;
+	color: white;
+    font-size: 14px;}
+
+.form_input:focus{
+	background: linear-gradient(to bottom, transparent, #b87400);
+	outline: none;
+}
+
+.form textarea{
+	min-height: 150px;
+	min-width: 170px;
+	resize: none;
+	
+}
+
+.form-img{
+	padding: 30px;
+	min-width: 200px;
+	max-width: 250px;
+	order: 2;
+}
+
+.img-container{
+	display: flex;
+	padding: 20px;
+	margin: auto;
+	border-radius: 50%;
+	background-color: #b87400;
+
+
+}
+
+.form-img img{
+	width: 100%;
+	
+}
+/* LOGOTIPO- ESTILOS NUEVAS AGREGADAS*/
+
+.logo
+{
+
+	width: 200px;
+	height:200px;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	margin: auto;
+	margin-top: 20px;
+	padding-top: 10px;
+
+}
+
+
+.titulo{
+    text-align: center;
+    color: #b87400;
+    font-weight: bolder;
+}
+.alineacion{
+	width: 100%;
+	text-align: center;	
+	padding-left: 50px;
+	padding-right: 50px;
+
+}
+.tituloaside{
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+    padding-bottom: 10px;
+
+}
+.zoom {
+    transition: transform .2s; 
+}
+ 
+.zoom:hover {
+    transform: scale(1.5); 
+}
+::placeholder{
+    color:white;
+}
+
+ /*GALERIA-ESTILOS NUEVOS AGREGADOS*/
+
+.galeria{
+	width: 100%;
+    
+    }
+
+.galeria p{
+	font-family: Georgia, sans-serif;	
+	text-align: center;
+    color: #b87400;
+    font-weight: bolder;	
+	font-size: 25px;
+	margin-bottom: 3%;
+	top: 62%; /* right: 5%; /* alternativa right 5% de toda la pantalla que se mueva un 5% de toda la pantalla*/
+	left: 18%; /*bottom: 5%; /* alternativa bottom 5% de toda la pantalla que se mueva un 5% de toda la pantalla*/
+	
+
+}
+.galeria table{
+	background-color: steelblue;
+	width: 95%;
+	height: 400px;
+	margin: auto;
+}
+.galeria table tr{
+	width: 100%;
+	height: 400px;
+
+}
+.galeria table tr td{
+	width: 33.33%;
+	position: relative;
+	overflow: hidden;
+
+}
+.galeria table tr td img{
+	width: 100%;
+	height: 400px;
+	position: absolute;
+
+
+	
+}
+.zoomimg {
+    transition: transform .2s;
+    width: 100%;
+	height: 400px;
+	position: relative; 
+}
+ 
+.zoomimg:hover {
+    transform: scale(1.5); 
+}
+.zoomimg h5{
+	padding-top: 400px;
+	text-align: center;
+	width: 100%;
+	height: 200px;
+	position: relative;
+
+	font-family: verdana; /*OPCION 3*/
+	color:rgb(126, 68, 0, 0);	
+	font-size: 20px;
+}
+
+.zoomimg:hover h5{
+	color: rgb(126, 68, 0, 1);
+}
+.imgredonda{  
+  width:500px;
+  height:500px;
+  align-items: center;
+  border-radius:50px;
+  border-width:2px   ;
+  border-style: double;
+  border-color: #D35400;
+  
+}
+
+.imgmenu{
+  
+   border: 4px;
+   
+   width: 50%;
+   border-radius:50px;
+   border-width:2px   ;
+   border-style: double;
+   border-color: #b87400;
+}
+
